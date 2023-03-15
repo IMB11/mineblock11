@@ -1,0 +1,27 @@
+name: Sync Secrets
+on:
+  workflow_dispatch:
+    inputs:
+      target_repo:
+        type: string
+        description: Repositories to send secrets to
+        required: true
+      token:
+        type: string
+        description: Personal Access Token
+        required: true
+jobs:
+  sync-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google/secrets-sync-action@v1.4.1
+        with:
+          SECRETS: |
+            ^(MODRINTH|CURSEFORGE)_TOKEN$
+          REPOSITORIES: |
+            ${{ github.event.inputs.target_repo }}
+          REPOSITORIES_LIST_REGEX: false
+          GITHUB_TOKEN: ${{ github.event.inputs.token }}
+        env:
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
