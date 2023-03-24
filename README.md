@@ -39,18 +39,9 @@ I also have experience modding in Unreal Engine, Unity Engine and Java-based gam
   
 </details>
 
-<details>
-  <summary>Why are your Minecraft mods ARR?</summary>
- 
-  I do not find the open source system useful for Minecraft modding - however, I intend that you can be able look at my code, learn from it, and validate it's legitimacy, freely. Contributions are accepted, however you must accept that all code you pull request belongs to me once merged, I will give credit though.
-            
-  If this permission is abused, I will be fully close sourcing my Minecraft Mod repos.
-            
-  Beat Saber mods for Meta Quest 2 and Meta Quest 2 Pro remain open source licensed due to their nature of being difficult to create and the small modding community surrounding it.
-  
-</details>
 
-<details>
+
+<detais>
   <summary>I need to contact you, where can I do so?</summary>
  
   I am most active on Discord, you can find [my discord server here.](https://discord.gg/UzHtJKqHny)
